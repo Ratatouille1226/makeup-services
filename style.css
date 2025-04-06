@@ -7,6 +7,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Sevillana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Sevillana&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: black;
     color: #c5c5c5;
@@ -44,12 +48,12 @@ body {
 }
 
 .image__home img {
-    width: 400px;
-    height: 600px;
+    width: 500px;
+    height: 800px;
     opacity: .6;
     position: absolute;
     bottom: 0;
-    filter: grayscale(85%);
+    /* filter: grayscale(65%); */
 }
 
 .about__home {
@@ -139,18 +143,23 @@ line-height: 30px;
     font-weight: 400;
     font-family: "Sevillana", cursive;
 }
-.work__experience-block button {
+.work__experience-block a {
     width: 380px;
     height: 50px;
     border: 2px solid black;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
     background-color: transparent;
     border-radius: 5px;
     font-size: 19px;
     font-weight: 600;
     transition: .4s ease all;
 }
-.work__experience-block button:hover {
+.work__experience-block a:hover {
     color: #fff;
     background-color: black;
     transition: .4s ease all;
@@ -217,6 +226,11 @@ line-height: 30px;
 .cta-button {
     background: transparent;
     border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
     color: white;
     width: 200px;
     height: 50px;
@@ -249,12 +263,14 @@ line-height: 30px;
 
 .reviews__block {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 .review {
-    width: 450px;
+    width: 400px;
     height: 350px;
-    flex: 1 1 30rem;
+    
 }
 .review img {
     width: 100%;
@@ -282,6 +298,56 @@ line-height: 30px;
     background-color:#dfb598;
 }
 /* ОТЗЫВЫ */ /* ОТЗЫВЫ */ /* ОТЗЫВЫ */ /* ОТЗЫВЫ */ /* ОТЗЫВЫ */
+
+/* ПРАЙС */ /* ПРАЙС */ /* ПРАЙС */ /* ПРАЙС */ /* ПРАЙС */
+.price {
+    margin: 50px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.price__title {
+    font-size: 40px;
+    font-weight: 300;
+}
+.tabcontainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.evening__day-wedding {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.tabheader {
+    display: flex;
+    gap: 10px;
+}
+.tabheader__item {
+    width: 120px;
+    height: 35px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid white;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: .8s ease all;
+}
+
+.tab__active {
+    border-top: 2px solid rgb(106, 106, 209);
+    border-bottom: 2px solid rgb(106, 106, 196);
+    transition: .8s ease all;
+    box-shadow: 1px 1px 15px rgb(107, 104, 255);
+}
+/* ПРАЙС */ /* ПРАЙС */ /* ПРАЙС */ /* ПРАЙС */ /* ПРАЙС */
 
 /* ФУТЕР */ /* ФУТЕР */ /* ФУТЕР */ /* ФУТЕР */ /* ФУТЕР */
     footer {
@@ -327,13 +393,6 @@ line-height: 30px;
         color: rgb(0, 208, 255);
     }
 /* ФУТЕР */ /* ФУТЕР */ /* ФУТЕР */ /* ФУТЕР */ /* ФУТЕР */
-@media (max-width: 1220px) {
-    .review {
-        height: 300px;
-        flex: 1 1 25rem;
-    } 
-}
-
 @media (max-width: 1200px) {
     .right__box {
         max-width: 700px;
@@ -364,10 +423,11 @@ line-height: 30px;
     }
 }
 
-@media (max-width: 1160px) {
+
+@media (max-width: 1060px) {
     .review {
-        height: 300px;
-        flex: 1 1 20rem;
+        height: 280px;
+        width: 300px;
     } 
 }
 
@@ -390,7 +450,43 @@ line-height: 30px;
     }
 }
 
-@media (max-width: 899px) {
+
+@media (max-width: 860px) {
+    .reviews {
+        padding: 50px 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .home__background {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .image__home {
+        flex: 1 1 50rem;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -640px;
+    }
+    .about__home {
+        flex: 1 1 50rem;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -300px;
+    }
+    .home__background {
+        height: 1000px;
+    }
+}
+
+@media (max-width: 660px) {
     .beige {
         display: flex;
         order: 4;
@@ -405,48 +501,21 @@ line-height: 30px;
     }
 }
 
-@media (max-width: 800px) {
-    .home__background {
-        flex-wrap: wrap;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-    }
-    .image__home {
-        flex: 1 1 50rem;
-        order: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: -640px;
-    }
-    .about__home {
-        flex: 1 1 50rem;
-        order: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: -300px;
-    }
-    .home__background {
-        height: 1000px;
-    }
-}
-
 @media (max-width: 610px) {
     .image__home img {
-        width: 300px;
-        height: 450px;
+        width: 330px;
+        height: 550px;
     }
     .home__background {
         height: 800px;
     }
     .image__home {
         margin-top: -560px;
+        order: 1;
     }
     .about__home {
         margin-top: -180px;
+        order: 0;
     }
     .information__home button {
         position: relative;
@@ -496,7 +565,6 @@ line-height: 30px;
     .review {
         height: 280px;
         width: 300px;
-        flex: 1 1 15rem;
     } 
     .reviews {
         padding: 50px 20px;
@@ -513,6 +581,12 @@ line-height: 30px;
     .recommended {
         padding: 15px;
     }
+    .price {
+        margin: 50px 0px;
+    }
+    .home__background .about__home h1 {
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 420px) {
@@ -520,7 +594,7 @@ line-height: 30px;
         font-size: 18px;
         line-height: 30px;
         }
-        .work__experience-block button {
+        .work__experience-block a {
             width: 300px;
             height: 50px;
         }
@@ -534,7 +608,7 @@ line-height: 30px;
 
 @media (max-width: 380px) {
     .home__background .about__home h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
     .information__home span {
         line-height: 20px;
@@ -542,5 +616,23 @@ line-height: 30px;
     }
     .right__box {
         padding: 140px 15px 15px 15px;
+    }
+    .price {
+        font-size: 14px;
+    }
+    .work__experience-block img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 10px solid #fff;
+    }
+    .left__box .text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 380px) {
+    .home__background .about__home h1 {
+        font-size: 22px;
     }
 }

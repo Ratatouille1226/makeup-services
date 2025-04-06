@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Sevillana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Document</title>
 </head>
@@ -16,67 +17,104 @@
         <div class="content">
             <section class="home__background">
                 <div class="image__home">
-                    <img src="image/home_bg.png" alt="home_image">
+                    <img src="image/homeBG.png" alt="home_image" data-aos="fade-right">
                 </div>
-                <div class="about__home">
+                <div class="about__home" data-aos="fade-left">
                     <div class="information__home">
                         <h1>Здравствуйте, меня зовут Екатерина<br> и я профессиональный визажист</h1>
-                        <span>Simple Text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum.</span>
+                        <span>Макияж — это не просто услуга, это искусство. Моя цель - сделать так, чтобы вы чувствовали себя уверенно, сияющими и незабываемыми в ваш особенный день.</span>
                         <button><a href="tel:+79281071936">Позвонить</a></button>
                     </div>
                 </div>
             </section>
             <section class="work__experience">
                 <div class="work__experience-block">
-                    <img src="image/experienceImage.png" alt="work_image">
+                    <img src="image/experienceImage.png" alt="work_image" data-aos="zoom-in">
                     <h2>Немного обо мне</h2>
-                    <p>As a multi-ethnic dreadlocks salon we can create dreadlocks on many different hair types and textures. Depending on the length and texture of your hair, we use several different methods or a combination of methods to help you achieve your dreads.</p>
-                    <button>Посмотреть сертификат</button>
+                    <p>Как профессиональный визажист, я специализируюсь на создании элегантных и естественных образов для любого случая. Моя цель - от свадеб до фотосессий, чтобы каждый клиент чувствовал себя уверенным, красивым и сияющим.</p>
+                    <a href="https://mst.link/zasyadko_ekaterina">Записаться</a>
                 </div>
             </section>
             <section class="recommended">
-                <div class="left__box">
-                    <img src="image/experienceImage.png" alt="Profile" class="profile__img">
-                    <p class="text">We offer hair care services from dreadlock maintenance to weaves and hair extensions. With our expert advice and skillful care, you can have the attractive look you have always wanted.</p>
+                <div class="left__box" data-aos="fade-right">
+                    <img src="image/whyChooseMe.png" alt="Profile" class="profile__img">
+                    <p class="text">"Екатерина потрясающая! Она дала мне почувствовать себя такой красивой и уверенной. Ее работа безупречна, и я бы порекомендовала ее всем, кто ищет талантливого визажиста!"</p>
                 </div>
-                <div class="right__box">
+                <div class="right__box" data-aos="fade-left">
                     <h2>Почему выбирают меня, и приходят не один раз</h2>
-                    <p>Article evident arrived express highest men did boy. Mistress sensible entirely am so. Quick can manor smart money hopes worth too. Comfort produce husband boy her had hearing.</p>
-                    <button class="cta-button">Написать</button>
+                    <p>Мои клиенты возвращаются, потому что чувствуют себя уверенно и комфортно в моем кресле. Я внимательно прислушиваюсь к их потребностям и слежу за тем, чтобы каждый образ отражал их индивидуальность и подчеркивал их естественную красоту.</p>
+                    <a href="#contacts" class="cta-button">Написать</a>
                 </div>
+            </section>
+            <section class="price">
+                <h2 class="price__title">Прайс</h2>
+                    <div class="tabheader">
+                        <button class="tabheader__item tab__active">Макияж</button>
+                        <button class="tabheader__item">Укладка</button>
+                    </div>
+                    <div class="tabcontainer">
+                        <div class="tabcontent">
+                            <div class="evening__day-wedding">
+                                <h2>Дневной макияж</h2>
+                                <span>от 1500р</span>
+                            </div>
+                            <div class="evening__day-wedding">
+                                <h2>Вечерний макияж</h2>
+                                <span>от 1500р</span>
+                            </div>
+                            <div class="evening__day-wedding">
+                                <h2>Свадебный макияж</h2>
+                                <span>от 2000р</span>
+                            </div>
+                        </div>
+                        <div class="tabcontent">
+                            <div class="evening__day-wedding">
+                                <h2>Укладка до плеч</h2>
+                                <span>от 1000р</span>
+                            </div>
+                            <div class="evening__day-wedding">
+                                <h2>Укладка до лопаток</h2>
+                                <span>от 2000р</span>
+                            </div>
+                            <div class="evening__day-wedding">
+                                <h2>Длинная укладка</h2>
+                                <span>от 2500р</span>
+                            </div>
+                        </div>
+                    </div>
             </section>
             <section class="reviews">
                 <div class="reviews__title">
                     <h2>Отзывы</h2>
                 </div>
                 <div class="reviews__block">
-                    <div class="review">
-                        <img src="image/experienceImage.png" alt="">
+                    <div class="review" data-aos="fade-up">
+                        <img src="image/review1.png" alt="review__img">
                     </div>
-                    <div class="review review__pad">
-                        <h2>Юлия</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt beatae iusto ratione fugiat expedita? Voluptates cum laborum quos laudantium doloremque perferendis architecto ipsa, repudiandae recusandae reiciendis expedita mollitia quisquam ipsum?</p>
+                    <div class="review review__pad" data-aos="fade-up">
+                        <h2>Алиса</h2>
+                        <p>Я была поражена результатом! Она внимательно выслушала и создала образ, который оказался даже лучше, чем я себе представляла. Настоятельно рекомендую!</p>
                     </div>
-                    <div class="review beige review__pad">
-                        <h2>Юлия</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt beatae iusto ratione fugiat expedita? Voluptates cum laborum quos laudantium doloremque perferendis architecto ipsa, repudiandae recusandae reiciendis expedita mollitia quisquam ipsum?</p>
+                    <div class="review beige review__pad" data-aos="fade-up">
+                        <h2>Валя</h2>
+                        <p>Профессиональная, дружелюбная и невероятно талантливая. Мой макияж оставался безупречным весь день, и я получила так много комплиментов. Мне понравилось!</p>
                     </div>
-                    <div class="review order__img">
-                        <img src="image/experienceImage.png" alt="">
+                    <div class="review order__img" data-aos="fade-up"> 
+                        <img src="image/review2.png" alt="review__img">
                     </div>
-                    <div class="review">
-                        <img src="image/experienceImage.png" alt="">
+                    <div class="review" data-aos="fade-up">
+                        <img src="image/review3.png" alt="review__img">
                     </div>
-                    <div class="review review__pad white">
-                        <h2>Юлия</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt beatae iusto ratione fugiat expedita? Voluptates cum laborum quos laudantium doloremque perferendis architecto ipsa, repudiandae recusandae reiciendis expedita mollitia quisquam ipsum?</p>
+                    <div class="review review__pad white" data-aos="fade-up">
+                        <h2>Алёна</h2>
+                        <p>Лучший опыт макияжа, который у меня был. Она заставила меня почувствовать себя уверенной и красивой. Обязательно закажу еще раз на мое следующее мероприятие!</p>
                     </div>
                 </div>
             </section>
             <footer>
                 <h2>Как связаться со мной</h2>
                 <div class="connection">
-                    <div class="contacts">
+                    <div id="contacts" class="contacts">
                         <h3>Пишите мне в социальные сети:</h3>
                         <span><i class="fa-brands fa-vk vk"><a href="https://vk.com/id818712927">VK</a></i></span>
                         <span><i class="fa-brands fa-whatsapp whatsapp"><a href="https://wa.me/79281071936">Whatsapp</a></i></span>
@@ -92,7 +130,7 @@
         </div>
     </div>
 
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
