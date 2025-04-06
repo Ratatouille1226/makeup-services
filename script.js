@@ -36,3 +36,18 @@ AOS.init({
   duration: 700,
   once: true,
 });
+
+const swiper = new Swiper(".swiper", {
+  slidesPerView: "auto",
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  watchOverflow: true,
+  grabCursor: true,
+  autoplay: {
+    delay: 3000, // Задержка в миллисекундах (3 секунды)
+    disableOnInteraction: false, // Не останавливать автопрокрутку при взаимодействии
+  },
+});

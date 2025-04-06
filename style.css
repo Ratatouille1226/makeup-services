@@ -9,6 +9,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -73,7 +74,7 @@ body {
     line-height: 30px;
     font-size: 20px;
 }
-.information__home button {
+.information__home a {
     width: 200px;
     height: 60px;
     background-color: transparent;
@@ -81,18 +82,19 @@ body {
     border-radius: 3px;
     cursor: pointer;
     transition: 0.3s ease all;
-}
-.information__home button a {
     color: rgb(229, 229, 229);
     font-size: 19px;
-    transition: 0.3s ease all;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.information__home button:hover {
+
+.information__home a:hover {
     border: 3px solid #6a6a6a;
     transition: 0.3s ease all;
 }
-.information__home button a:hover {
+.information__home a:hover {
     color: rgb(91, 91, 91);
     transition: 0.3s ease all;
 }
@@ -247,6 +249,30 @@ line-height: 30px;
 }
 /* МЕНЯ РЕКОМЕНДУЮТ */ /* МЕНЯ РЕКОМЕНДУЮТ */ /* МЕНЯ РЕКОМЕНДУЮТ */ /* МЕНЯ РЕКОМЕНДУЮТ */
 
+/* СЛАЙДЕР */ /* СЛАЙДЕР */ /* СЛАЙДЕР */ /* СЛАЙДЕР */ /* СЛАЙДЕР */ /* СЛАЙДЕР */ /* СЛАЙДЕР */
+.slider__title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+}
+.swiper {
+    height: 500px;
+    margin: 50px 0px;
+    overflow: hidden; /* <-- это важно */
+}
+.swiper-slide {
+    max-width: 300px;
+  flex-shrink: 0;     
+}
+.swiper-slide img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+/* СЛАЙДЕР */ /* СЛАЙДЕР */ /* СЛАЙДЕР */ /* СЛАЙДЕР */ /* СЛАЙДЕР */ /* СЛАЙДЕР */ /* СЛАЙДЕР */
+
 /* ОТЗЫВЫ */ /* ОТЗЫВЫ */ /* ОТЗЫВЫ */ /* ОТЗЫВЫ */ /* ОТЗЫВЫ */
 .reviews {
     display: flex;
@@ -391,6 +417,9 @@ line-height: 30px;
     }
     .telegram {
         color: rgb(0, 208, 255);
+    }
+    footer a {
+        color: rgb(22, 22, 255);
     }
 /* ФУТЕР */ /* ФУТЕР */ /* ФУТЕР */ /* ФУТЕР */ /* ФУТЕР */
 @media (max-width: 1200px) {
