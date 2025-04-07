@@ -46,8 +46,4 @@ const swiper = new Swiper(".swiper", {
   },
   watchOverflow: true,
   grabCursor: true,
-  autoplay: {
-    delay: 3000, // Задержка в миллисекундах (3 секунды)
-    disableOnInteraction: false, // Не останавливать автопрокрутку при взаимодействии
-  },
 });
